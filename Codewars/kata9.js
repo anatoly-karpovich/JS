@@ -5,19 +5,10 @@
 // "identifier"   =>  "identifier"
 // ""             =>  ""
 
-
 function solution(string) {
-    let newString = '';
-    string.split('').forEach((el, index) => {
-      if (el === el.toUpperCase() && index>0) {
-        newString += ' ';
-        newString += el;
-      }  else {
-        newString += el;
-      }
-    });
-    return newString;
+    return string.split('').map((el, index) => {
+        return el === el.toUpperCase() && index>0 ? ' '.concat(el) : el
+    }).join('');
 }
 
-
-
+console.log(solution('ToUpperCase'))
