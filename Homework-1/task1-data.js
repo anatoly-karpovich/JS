@@ -79,7 +79,7 @@ const users = [
     },
 ];
 const usersFiltered = users.filter((user) => {
-    if (user.registrationDate == '09.10.2021' || user.registrationDate == '10.10.2021') {
+    if (user.registrationDate === '09.10.2021' || user.registrationDate === '10.10.2021') {
         return user;
     }
 })
