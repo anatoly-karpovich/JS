@@ -16,10 +16,16 @@ const arr = [
   "ОЛІЙНИК",
 ];
 
-//Solution 2
-const arrFinal = arr.slice(4);
-console.log(arrFinal);
-
 //Solution 1
-arr.splice(0, 4);
-console.log(arr);
+const spliceLastNames = function (array) {
+  array.splice(0, 4);
+  return array;
+};
+console.log(spliceLastNames(arr));
+
+//Solution 2
+// const sliceLastNames = function (array) {
+//   const arrFinal = array.slice(4);
+//   return arrFinal;
+// };
+// console.log(sliceLastNames(arr));
