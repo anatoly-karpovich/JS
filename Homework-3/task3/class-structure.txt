@@ -1,0 +1,30 @@
+class Zoo
+    address
+    area
+    established date
+    ticket price
+    workers: []
+    animals: [],
+
+
+class Animal
+    type
+    color
+    weight
+    height
+    place of origin
+
+
+class Snakes
+    isPoisonous
+
+class CatLike
+    isSafeToPet
+
+class Birds
+    isFlying
+
+class Worker
+    firstName
+    lastName
+    phone
