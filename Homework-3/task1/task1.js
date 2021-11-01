@@ -14,7 +14,7 @@ http
 
     res.on("end", () => {
       try {
-        let json = JSON.parse(body);
+        const json = JSON.parse(body);
         console.log(json.rates.USD);
 
         let products = JSON.parse(fs.readFileSync("./data.json"));

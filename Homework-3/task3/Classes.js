@@ -280,3 +280,11 @@ console.log(chicken);
 const lion = new Animal("cat", "orange", 100, 1);
 
 console.log(lion.animalInfo);
+
+// get getAnimalInfo() {
+//   return `Animal info is: id - ${this._id} type - ${this._type}, color - ${this._color}, weight - ${this._weight}, height - ${this._height}, place of origin - ${this._placeOfOrigin}`
+// }
+// в Снейк
+// get getAnimalInfo() {
+//   return super.getAnimalInfo + `, isPoisonous - ${this._isPoisonous}`
+// }
