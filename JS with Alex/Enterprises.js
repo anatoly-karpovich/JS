@@ -62,6 +62,7 @@ const employeesCountHelper = function (number) {
     else return "сотрудников";
   } else return "(нет сотрудников)";
 };
+
 const getNameById = function (num) {
   let name = [];
   const comp = enterprises.find((elem) => {
@@ -291,3 +292,4 @@ const transferEmployees = function (currentId, newId) {
 
 transferEmployees(6, 7);
 getDeptartments(enterprises);
+console.log(enterprises[0].departments[2]);
